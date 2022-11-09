@@ -15,7 +15,7 @@ public class zad5 : MonoBehaviour
     {
         
 
-        for (int i=0;i<=numberOfObjects;i++)
+        for (int i=0;i<numberOfObjects;i++)
         {
             
             var position = new Vector3(Random.Range(-5f, 5f), 1, Random.Range(-5f, 5f));
@@ -25,6 +25,11 @@ public class zad5 : MonoBehaviour
         {
             Instantiate(myPrefab, position, Quaternion.identity);
             positions.Add(position);
+
+            
+        }else
+        {
+            numberOfObjects+=1;
         }
            
         }

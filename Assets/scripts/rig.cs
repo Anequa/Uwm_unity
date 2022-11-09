@@ -27,7 +27,7 @@ public class rig : MonoBehaviour
             minimum = temp;
             t = 0.0f;
         }
-        //  float newPosition = Mathf.SmoothDamp(transform.position.y, yTarget, ref yVelocity, smoothTime);
-        //  transform.position = new Vector3(transform.position.x, newPosition, transform.position.z);
+         float newPosition = Mathf.SmoothDamp(transform.position.y, yTarget, ref yVelocity, smoothTime);
+         transform.position = new Vector3(transform.position.x, newPosition, transform.position.z);
      }
  }
